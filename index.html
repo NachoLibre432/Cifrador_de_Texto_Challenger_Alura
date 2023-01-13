@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+    <title>Cifrado</title>
+</head>
+<body>
+   <Main>
+        <img class="logo" src="Imagenes/programer.png">
+        <h1 class="titulo"> Codificador de Texto</h1>
+        
+        
+        <form id="cifrador"autocomplete="off">
+            <input id="textoEncriptado" spellcheck="false" placeholder="Ingrese el texto a encriptar aqui" type="text" name="text">
+            <textarea name="resultado" id="textoDesencriptado" cols="27" rows="9"></textarea>
+
+                       
+        </form>
+    
+    <div class="encriptar-desencriptar">
+        
+        <button type="button" id="botonEncriptado">Encriptar</button> 
+        <button type="button" id="botonDesencriptado">Desencriptar</button>
+     </div>   
+        
+    
+    <div class="btn-copy" > 
+        <button type="button" id="botonCopiar">Copiar</button>
+    </div>
+        
+<footer>
+    
+    <p class="copyrigth">&copy Copyrigth Rafael Quintero | ONE -G4 🇲🇽 - 2023</p>
+    
+</footer>
+</Main>
+
+</body>
+    <script>
+    
+        var boton = document.querySelector("#botonEncriptado");
+        boton.onclick= encriptar;
+        var boton2 = document.querySelector("#botonDesencriptado");
+        boton2.onclick= desencriptar;
+        var boton3 = document.querySelector("#botonCopiar");
+        boton3.onclick= copiar;
+
+</script>
+</html>
